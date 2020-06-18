@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/demo-ignite.iml" filepath="$PROJECT_DIR$/.idea/demo-ignite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-ignite-sql/demo-ignite-sql.iml" filepath="$PROJECT_DIR$/demo-ignite-sql/demo-ignite-sql.iml" />
     </modules>
   </component>
 </project>

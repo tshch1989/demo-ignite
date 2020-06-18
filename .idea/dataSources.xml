@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Ignite-Public" uuid="bf065c3c-0fb6-461e-b04c-b1270759367b">
+      <driver-ref>java.sql.Driver</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.apache.ignite.IgniteJdbcThinDriver</jdbc-driver>
+      <jdbc-url>jdbc:ignite:thin://127.0.0.1/</jdbc-url>
+    </data-source>
+  </component>
+</project>

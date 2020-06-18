@@ -27,5 +27,7 @@
     <!-- Imports default Ignite configuration -->
     <import resource="example-default.xml"/>
 
-    <bean parent="ignite.cfg"/>
+    <bean name="ignite-1" parent="ignite.cfg">
+        <property name="igniteInstanceName" value="ignite-1"/>
+    </bean>
 </beans>

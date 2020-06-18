@@ -32,6 +32,19 @@
         <!-- Set to true to enable distributed class loading for examples, default is false. -->
         <property name="peerClassLoadingEnabled" value="true"/>
 
+        <property name="workDirectory" value="D:\work\workspace\demo\demo-ignite\ignite"/>
+
+        <!-- Enabling Apache Ignite native persistence. -->
+        <property name="dataStorageConfiguration">
+            <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
+                <property name="defaultDataRegionConfiguration">
+                    <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
+                        <property name="persistenceEnabled" value="true"/>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+
         <!-- Enable task execution events for examples. -->
         <property name="includeEventTypes">
             <list>
@@ -66,6 +79,7 @@
                             <list>
                                 <!-- In distributed environment, replace with actual host IP address. -->
                                 <value>127.0.0.1:47500..47509</value>
+                                <value>127.0.0.1:57500..57509</value>
                             </list>
                         </property>
                     </bean>

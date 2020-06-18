@@ -1,0 +1,1159 @@
+[13:52:58,428][WARNING][main][G] Consistent ID is not set, it is recommended to set consistent ID for production clusters (use IgniteConfiguration.setConsistentId property)
+[13:52:58,592][INFO][main][IgniteKernal%ignite-1] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.8.1#20200521-sha1:86422096
+>>> 2020 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[13:52:58,605][INFO][main][IgniteKernal%ignite-1] Config URL: file:/D:/work/workspace/demo/demo-ignite/src/main/resources/example-ignite.xml
+[13:52:58,619][INFO][main][IgniteKernal%ignite-1] IgniteConfiguration [igniteInstanceName=ignite-1, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=8, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, sqlQryHistSize=1000, dfltQryTimeout=0, igniteHome=D:\软件\apache-ignite-2.8.1-bin, igniteWorkDir=D:\work\workspace\demo\demo-ignite\ignite, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@3d8314f0, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, netCompressionLevel=1, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, soLinger=5, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null, skipAddrsRandomization=false], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@7817fd62, chConnPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@8297b3a[Count = 1], stopping=false, metricsLsnr=null], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@2362f559, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@d35dea7, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@7770f470, clientMode=false, rebalanceThreadPoolSize=4, rebalanceTimeout=10000, rebalanceBatchesPrefetchCnt=3, rebalanceThrottle=0, rebalanceBatchSize=524288, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, deadlockTimeout=10000, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1685635891, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=true, checkpointPageBufSize=0, lazyMemoryAllocation=true], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@22fcf7ab, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null, walPageCompression=DISABLED, walPageCompressionLevel=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, handshakeTimeout=10000, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null, thinCliCfg=ThinClientConfiguration [maxActiveTxPerConn=100]], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[13:52:58,628][INFO][main][IgniteKernal%ignite-1] Daemon mode: off
+[13:52:58,628][INFO][main][IgniteKernal%ignite-1] OS: Windows 10 10.0 amd64
+[13:52:58,628][INFO][main][IgniteKernal%ignite-1] OS user: 86156
+[13:52:58,638][INFO][main][IgniteKernal%ignite-1] PID: 7712
+[13:52:58,638][INFO][main][IgniteKernal%ignite-1] Language runtime: Java Platform API Specification ver. 1.8
+[13:52:58,639][INFO][main][IgniteKernal%ignite-1] VM information: Java(TM) SE Runtime Environment 1.8.0_251-b08 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.251-b08
+[13:52:58,640][INFO][main][IgniteKernal%ignite-1] VM total memory: 1.7GB
+[13:52:58,640][INFO][main][IgniteKernal%ignite-1] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[13:52:58,641][INFO][main][IgniteKernal%ignite-1] Logger: JavaLogger [quiet=true, config=null]
+[13:52:58,641][INFO][main][IgniteKernal%ignite-1] IGNITE_HOME=D:\软件\apache-ignite-2.8.1-bin
+[13:52:58,641][INFO][main][IgniteKernal%ignite-1] VM arguments: [-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\lib\idea_rt.jar=52804:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\bin, -Dfile.encoding=UTF-8]
+[13:52:58,641][INFO][main][IgniteKernal%ignite-1] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[13:52:58,641][INFO][main][IgniteKernal%ignite-1] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[13:52:58,641][WARNING][main][IgniteKernal%ignite-1] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[13:52:58,642][WARNING][main][IgniteKernal%ignite-1] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[13:52:58,645][WARNING][pub-#19%ignite-1%][GridDiagnostic] This operating system has been tested less rigorously: Windows 10 10.0 amd64. Our team will appreciate the feedback if you experience any problems running ignite in this environment.
+[13:52:58,646][INFO][main][IgniteKernal%ignite-1] 3-rd party licenses can be found at: D:\软件\apache-ignite-2.8.1-bin\libs\licenses
+[13:52:58,648][WARNING][pub-#22%ignite-1%][GridDiagnostic] Initial heap size is 126MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[13:52:58,771][INFO][main][IgnitePluginProcessor] Configured plugins:
+[13:52:58,771][INFO][main][IgnitePluginProcessor]   ^-- None
+[13:52:58,771][INFO][main][IgnitePluginProcessor] 
+[13:52:58,776][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[13:52:59,158][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[13:52:59,417][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[13:52:59,426][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[13:52:59,448][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[13:52:59,451][INFO][main][IgniteKernal%ignite-1] Security status [authentication=off, tls/ssl=off]
+[13:52:59,493][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0, locNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[13:52:59,510][INFO][main][PdsFoldersResolver] Successfully locked persistence storage folder [D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370]
+[13:52:59,511][INFO][main][PdsFoldersResolver] Consistent ID used for local node is [6830b59d-be53-4670-b9b0-ad9c6eaec370] according to persistence data storage folders
+[13:52:59,511][INFO][main][CacheObjectBinaryProcessorImpl] Resolved directory for serialized binary metadata: D:\work\workspace\demo\demo-ignite\ignite\binary_meta\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370
+[13:52:59,714][INFO][main][FilePageStoreManager] Resolved page store work directory: D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370
+[13:52:59,716][INFO][main][FileWriteAheadLogManager] Resolved write ahead log work directory: D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370
+[13:52:59,716][INFO][main][FileWriteAheadLogManager] Resolved write ahead log archive directory: D:\work\workspace\demo\demo-ignite\ignite\db\wal\archive\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370
+[13:52:59,746][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000001.wal
+[13:52:59,747][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000002.wal
+[13:52:59,747][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000003.wal
+[13:52:59,747][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000004.wal
+[13:52:59,748][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000005.wal
+[13:52:59,748][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000006.wal
+[13:52:59,748][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000007.wal
+[13:52:59,749][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000008.wal
+[13:52:59,749][INFO][main][FileWriteAheadLogManager] Reached logical end of the segment for file D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000009.wal
+[13:52:59,753][INFO][main][FileHandleManagerImpl] Initialized write-ahead log manager [mode=LOG_ONLY]
+[13:52:59,765][WARNING][main][GridCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[13:52:59,779][INFO][main][GridCacheDatabaseSharedManager] Configured data regions initialized successfully [total=4]
+[13:52:59,796][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[13:52:59,824][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[13:52:59,992][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10800
+[13:53:00,050][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[13:53:00,312][INFO][main][GridJettyRestProtocol] Command protocol successfully started [name=Jetty REST, host=/0.0.0.0, port=8080]
+[13:53:01,040][INFO][main][IgniteKernal%ignite-1] Non-loopback local IPs: 10.2.141.220, fe80:0:0:0:184b:6931:a7b8:9651%wlan1, fe80:0:0:0:34fd:f4d4:268a:ebf%wlan3, fe80:0:0:0:59a3:a605:f128:4848%eth3, fe80:0:0:0:b534:8a27:2a4e:9fac%wlan2, fe80:0:0:0:e57f:6772:dab4:4453%eth2
+[13:53:01,040][INFO][main][IgniteKernal%ignite-1] Enabled local MACs: 00FF6866207C, 00FFAABBCCDD, A0510B888100, A0510B8881FF, A2510B8881FF
+[13:53:01,045][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-START.bin, endMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-END.bin]
+[13:53:01,050][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=24808, tableSize=1.9 MiB, checkpointBuffer=100.0 MiB]
+[13:53:01,052][INFO][main][GridCacheDatabaseSharedManager] Checking memory state [lastValidPos=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastMarked=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastCheckpointId=7e41d586-9952-4654-a54b-d23b9ae9b0e3]
+[13:53:01,140][INFO][main][GridCacheDatabaseSharedManager] Found last checkpoint marker [cpId=7e41d586-9952-4654-a54b-d23b9ae9b0e3, pos=FileWALPointer [idx=0, fileOff=14457325, len=21425]]
+[13:53:01,191][INFO][main][GridCacheDatabaseSharedManager] Applying lost cache updates since last checkpoint record [lastMarked=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastCheckpointId=7e41d586-9952-4654-a54b-d23b9ae9b0e3]
+[13:53:01,225][INFO][main][GridCacheDatabaseSharedManager] Finished applying WAL changes [updatesApplied=0, time=33 ms]
+[13:53:01,225][INFO][main][GridCacheProcessor] Restoring partition state for local groups.
+[13:53:01,226][INFO][main][GridCacheProcessor] Finished restoring partition state for local groups [groupsProcessed=0, partitionsProcessed=0, time=11ms]
+[13:53:01,248][INFO][main][GridClusterStateProcessor] Restoring history for BaselineTopology[id=0]
+[13:53:01,279][INFO][main][DistributedBaselineConfiguration] Baseline parameter 'baselineAutoAdjustEnabled' was changed from 'null' to 'false'
+[13:53:01,279][INFO][main][DistributedBaselineConfiguration] Baseline parameter 'baselineAutoAdjustTimeout' was changed from 'null' to '300000'
+[13:53:01,280][INFO][main][IgniteH2Indexing] SQL parameter 'sql.disabledFunctions' was changed from 'null' to '[FILE_WRITE, CANCEL_SESSION, MEMORY_USED, CSVREAD, LINK_SCHEMA, MEMORY_FREE, FILE_READ, CSVWRITE, SESSION_ID, LOCK_MODE]'
+[13:53:01,283][INFO][main][FilePageStoreManager] Cleanup cache stores [total=1, left=0, cleanFiles=false]
+[13:53:01,290][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=24808, tableSize=1.9 MiB, checkpointBuffer=100.0 MiB]
+[13:53:01,290][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=24808, tableSize=1.9 MiB, checkpointBuffer=100.0 MiB]
+[13:53:01,291][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=24808, tableSize=1.9 MiB, checkpointBuffer=100.0 MiB]
+[13:53:01,292][INFO][main][GridCacheDatabaseSharedManager] Configured data regions started successfully [total=4]
+[13:53:01,293][INFO][main][GridCacheDatabaseSharedManager] Starting binary memory restore for: [-2100569601, -1309611973]
+[13:53:01,700][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-START.bin, endMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-END.bin]
+[13:53:01,700][INFO][main][GridCacheDatabaseSharedManager] Checking memory state [lastValidPos=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastMarked=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastCheckpointId=7e41d586-9952-4654-a54b-d23b9ae9b0e3]
+[13:53:01,766][INFO][main][GridCacheDatabaseSharedManager] Found last checkpoint marker [cpId=7e41d586-9952-4654-a54b-d23b9ae9b0e3, pos=FileWALPointer [idx=0, fileOff=14457325, len=21425]]
+[13:53:01,775][INFO][main][GridCacheDatabaseSharedManager] Binary memory state restored at node startup [restoredPtr=FileWALPointer [idx=0, fileOff=14478750, len=0]]
+[13:53:01,776][INFO][main][FileWriteAheadLogManager] Resuming logging to WAL segment [file=D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000000.wal, offset=14478750, ver=2]
+[13:53:01,876][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ignite-sys-cache, id=-2100569601, dataRegionName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false]
+[13:53:01,890][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=1.6 GiB, pages=398912, tableSize=31.0 MiB, checkpointBuffer=401.9 MiB]
+[13:53:01,933][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SQL_PUBLIC_T_CITY, id=-1309611973, dataRegionName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false]
+[13:53:01,935][INFO][main][GridCacheDatabaseSharedManager] Binary recovery performed in 642 ms.
+[13:53:01,936][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-START.bin, endMarker=D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\cp\1592452184811-7e41d586-9952-4654-a54b-d23b9ae9b0e3-END.bin]
+[13:53:01,936][INFO][main][GridCacheDatabaseSharedManager] Applying lost cache updates since last checkpoint record [lastMarked=FileWALPointer [idx=0, fileOff=14457325, len=21425], lastCheckpointId=7e41d586-9952-4654-a54b-d23b9ae9b0e3]
+[13:53:01,973][INFO][main][GridCacheDatabaseSharedManager] Finished applying WAL changes [updatesApplied=0, time=43 ms]
+[13:53:01,973][INFO][main][GridCacheProcessor] Restoring partition state for local groups.
+[13:53:02,684][INFO][main][GridCacheProcessor] Finished restoring partition state for local groups [groupsProcessed=2, partitionsProcessed=1124, time=707ms]
+[13:53:02,756][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[13:53:43,507][INFO][disco-notifier-worker-#44%ignite-1%][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, ver=1592459623495, local=true, initialized=false]]
+[13:53:43,515][INFO][disco-notifier-worker-#44%ignite-1%][GridClusterStateProcessor] Sending activate request with BaselineTopology BaselineTopology [id=0, branchingHash=25009409, branchingType='Cluster activation', baselineNodes=[6830b59d-be53-4670-b9b0-ad9c6eaec370]]
+[13:53:43,525][INFO][disco-notifier-worker-#44%ignite-1%][GridClusterStateProcessor] Received activate request with BaselineTopology[id=0]
+[13:53:43,527][INFO][disco-notifier-worker-#44%ignite-1%][GridClusterStateProcessor] Started state transition: true
+[13:53:43,559][INFO][exchange-worker-#46%ignite-1%][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, customEvt=ChangeGlobalStateMessage [id=948ccf5c271-dca02330-62cc-45e1-a870-056faab482ed, reqId=c222abd4-c91c-4163-9d4a-aa1a5855fa07, initiatingNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, activate=true, baselineTopology=BaselineTopology [id=0, branchingHash=25009409, branchingType='Cluster activation', baselineNodes=[6830b59d-be53-4670-b9b0-ad9c6eaec370]], forceChangeBaselineTopology=false, timestamp=1592459623515], allowMerge=false, exchangeFreeSwitch=false]
+[13:53:43,559][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Start activation process [nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, client=false, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,560][INFO][exchange-worker-#46%ignite-1%][FilePageStoreManager] Resolved page store work directory: D:\work\workspace\demo\demo-ignite\ignite\db\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370
+[13:53:43,562][INFO][exchange-worker-#46%ignite-1%][FileWriteAheadLogManager] Resuming logging to WAL segment [file=D:\work\workspace\demo\demo-ignite\ignite\db\wal\node00-6830b59d-be53-4670-b9b0-ad9c6eaec370\0000000000000000.wal, offset=17653980, ver=2]
+[13:53:43,564][INFO][exchange-worker-#46%ignite-1%][GridClusterStateProcessor] Writing BaselineTopology[id=0]
+[13:53:43,575][INFO][exchange-worker-#46%ignite-1%][GridCacheDatabaseSharedManager] Finish recovery performed in 13 ms.
+[13:53:43,575][INFO][exchange-worker-#46%ignite-1%][msg] Components activation performed in 15 ms.
+[13:53:43,607][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Finished recovery for cache [cache=SQL_PUBLIC_T_CITY, grp=SQL_PUBLIC_T_CITY, startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,607][INFO][sys-#57%ignite-1%][GridCacheProcessor] Finished recovery for cache [cache=ignite-sys-cache, grp=ignite-sys-cache, startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,619][INFO][main][IgniteKernal%ignite-1] Performance suggestions for grid 'ignite-1' (fix if possible)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Disable fully synchronous writes (set 'writeSynchronizationMode' to PRIMARY_SYNC or FULL_ASYNC)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1] 
+[13:53:43,620][INFO][main][IgniteKernal%ignite-1] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[13:53:43,622][INFO][main][IgniteKernal%ignite-1] Data Regions Configured:
+[13:53:43,622][INFO][main][IgniteKernal%ignite-1]   ^-- default [initSize=256.0 MiB, maxSize=1.6 GiB, persistence=true, lazyMemoryAllocation=true]
+[13:53:43,624][INFO][main][IgniteKernal%ignite-1] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.8.1#20200521-sha1:864220966caa4157c4fee8a1bc85171623963604
+>>> +----------------------------------------------------------------------+
+>>> OS name: Windows 10 10.0 amd64
+>>> CPU(s): 8
+>>> Heap: 1.7GB
+>>> VM name: 7712@DESKTOP-2JCJ7AL
+>>> Ignite instance name: ignite-1
+>>> Local node [ID=5B9E13C7-B26E-43B7-9A52-B361ED245459, order=1, clientMode=false]
+>>> Local node addresses: [DESKTOP-2JCJ7AL.gome.inc/0:0:0:0:0:0:0:1, /10.2.141.220, /127.0.0.1]
+>>> Local ports: TCP:8080 TCP:10800 TCP:11211 TCP:47100 UDP:47400 TCP:47500 
+
+[13:53:43,626][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Successfully activated caches [nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, client=false, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,627][INFO][main][GridDiscoveryManager] Topology snapshot [ver=1, locNode=5b9e13c7, servers=1, clients=0, state=INACTIVE, CPUs=8, offheap=1.6GB, heap=1.7GB]
+[13:53:43,627][INFO][main][GridDiscoveryManager]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[13:53:43,627][INFO][main][GridDiscoveryManager]   ^-- All baseline nodes are online, will start auto-activation
+[13:53:43,629][INFO][main][G] Node started : [stage="Configure system pool" (47 ms),stage="Start managers" (890 ms),stage="Configure binary metadata" (95 ms),stage="Start processors" (787 ms),stage="Init metastore" (925 ms),stage="Init and start regions" (8 ms),stage="Restore binary memory" (643 ms),stage="Restore logical state" (749 ms),stage="Finish recovery" (56 ms),stage="Join topology" (40765 ms),stage="Await transition" (19 ms),stage="Await exchange" (100 ms),stage="Total time" (45084 ms)]
+[13:53:43,634][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:53:43,685][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,699][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=a5921986-88b7-4d38-b233-4dd1ca672646, startPtr=FileWALPointer [idx=0, fileOff=17815688, len=21425], checkpointBeforeLockTime=21ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=8ms, checkpointLockHoldTime=12ms, walCpRecordFsyncDuration=3ms, writeCheckpointEntryDuration=6ms, splitAndSortCpPagesDuration=4ms,  pages=784, reason='node started']
+[13:53:43,750][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], err=null, rebalanced=true, wasRebalanced=false]
+[13:53:43,755][INFO][disco-notifier-worker-#44%ignite-1%][GridClusterStateProcessor] Received state change finish message: true
+[13:53:43,791][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459
+[13:53:43,791][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Finish proxy initialization, cacheName=SQL_PUBLIC_T_CITY, localNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459
+[13:53:43,822][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=5b9e13c7-b26e-43b7-9a52-b361ed245459, consistentId=6830b59d-be53-4670-b9b0-ad9c6eaec370, addrs=ArrayList [0:0:0:0:0:0:0:1, 10.2.141.220, 127.0.0.1], sockAddrs=HashSet [/0:0:0:0:0:0:0:1:47500, /127.0.0.1:47500, DESKTOP-2JCJ7AL.gome.inc/10.2.141.220:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1592459582754, loc=true, ver=2.8.1#20200521-sha1:86422096, isClient=false], done=true, newCrdFut=null], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,822][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange timings [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], stage="Waiting in exchange queue" (19 ms), stage="Exchange parameters initialization" (4 ms), stage="Update caches registry" (22 ms), stage="Start caches" (25 ms), stage="Affinity initialization on cache group start" (17 ms), stage="Determine exchange type" (3 ms), stage="Preloading notification" (1 ms), stage="WAL history reservation" (2 ms), stage="Wait partitions release" (3 ms), stage="Restore partition states" (8 ms), stage="After states restored callback" (41 ms), stage="Waiting for all single messages" (0 ms), stage="Affinity recalculation (crd)" (0 ms), stage="Collect update counters and create affinity messages" (0 ms), stage="Validate partitions states" (3 ms), stage="Assign partitions states" (8 ms), stage="Ideal affinity diff calculation (enforced)" (12 ms), stage="Apply update counters" (6 ms), stage="Full message preparing" (29 ms), stage="Full message sending" (0 ms), stage="State finish message sending" (2 ms), stage="Exchange done" (71 ms), stage="Total time" (276 ms)]
+[13:53:43,823][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange longest local stages [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], stage="Affinity initialization on cache group start [grp=SQL_PUBLIC_T_CITY]" (17 ms) (parent=Affinity initialization on cache group start), stage="Affinity initialization on cache group start [grp=ignite-sys-cache]" (11 ms) (parent=Affinity initialization on cache group start), stage="Affinity centralized initialization (crd) [grp=ignite-sys-cache, crd=true]" (1 ms) (parent=Determine exchange type), stage="Affinity centralized initialization (crd) [grp=SQL_PUBLIC_T_CITY, crd=true]" (1 ms) (parent=Determine exchange type), stage="Restore partition states [grp=SQL_PUBLIC_T_CITY]" (8 ms) (parent=Restore partition states), stage="Restore partition states [grp=ignite-sys-cache]" (3 ms) (parent=Restore partition states), stage="Affinity recalculation (partitions availability) [grp=SQL_PUBLIC_T_CITY]" (12 ms) (parent=Ideal affinity diff calculation (enforced)), stage="Affinity recalculation (partitions availability) [grp=ignite-sys-cache]" (4 ms) (parent=Ideal affinity diff calculation (enforced))]
+[13:53:43,825][INFO][sys-#55%ignite-1%][DistributedBaselineConfiguration] Baseline auto-adjust is 'disabled' with timeout='300000' ms
+[13:53:43,825][INFO][sys-#55%ignite-1%][GridClusterStateProcessor] Successfully performed final activation steps [nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, client=false, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:53:43,828][INFO][exchange-worker-#46%ignite-1%][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], crd=true]
+[13:53:43,841][INFO][exchange-worker-#46%ignite-1%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=1], force=false, evt=DISCOVERY_CUSTOM_EVT, node=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[13:53:44,221][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=a5921986-88b7-4d38-b233-4dd1ca672646, pages=784, markPos=FileWALPointer [idx=0, fileOff=17815688, len=21425], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=29ms, pagesWrite=143ms, fsync=377ms, total=570ms]
+[13:53:53,535][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Your version is up to date.
+[13:54:43,629][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:01:00.012]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0.07%, avg=0.32%, GC=0%]
+    ^-- PageMemory [pages=4650]
+    ^-- Heap [used=87MB, free=95.08%, comm=295MB]
+    ^-- Off-heap [used=18MB, free=99.04%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=18MB, free=98.86%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[13:55:43,635][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:02:00.019]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.27%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=99MB, free=94.43%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:56:43,642][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:03:00.024]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.23%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=102MB, free=94.24%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=5, qSize=0]
+[13:56:43,684][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Skipping checkpoint (no pages were modified) [checkpointBeforeLockTime=3ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=5ms, checkpointLockHoldTime=8ms, reason='timeout']
+[13:57:43,647][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:04:00.025]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0.07%, avg=0.21%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=107MB, free=93.98%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:58:43,641][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:05:00.027]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=112MB, free=93.72%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:59:43,649][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:06:00.029]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=116MB, free=93.46%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:59:43,689][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Skipping checkpoint (no pages were modified) [checkpointBeforeLockTime=9ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=2ms, checkpointLockHoldTime=4ms, reason='timeout']
+[14:00:43,654][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:07:00.040]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=122MB, free=93.15%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:01:27,654][SEVERE][client-connector-#70%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=120, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=begin ;
+update T_CITY set NAME='aaaa' where ID=7552613966116028416;, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=120]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: MVCC must be enabled in order to start transaction.
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1144)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.handle(JdbcRequestHandler.java:247)
+	at org.apache.ignite.internal.processors.odbc.ClientListenerNioListener.onMessage(ClientListenerNioListener.java:195)
+	at org.apache.ignite.internal.processors.odbc.ClientListenerNioListener.onMessage(ClientListenerNioListener.java:49)
+	at org.apache.ignite.internal.util.nio.GridNioFilterChain$TailFilter.onMessageReceived(GridNioFilterChain.java:279)
+	at org.apache.ignite.internal.util.nio.GridNioFilterAdapter.proceedMessageReceived(GridNioFilterAdapter.java:109)
+	at org.apache.ignite.internal.util.nio.GridNioAsyncNotifyFilter$3.body(GridNioAsyncNotifyFilter.java:97)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.worker.GridWorkerPool$1.run(GridWorkerPool.java:70)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[14:01:43,666][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:08:00.049]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.16%, GC=0%]
+    ^-- PageMemory [pages=5419]
+    ^-- Heap [used=126MB, free=92.94%, comm=295MB]
+    ^-- Off-heap [used=21MB, free=98.88%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=21MB, free=98.67%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=30MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=30MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:02:25,464][INFO][exchange-worker-#46%ignite-1%][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, customEvt=DynamicCacheChangeBatch [id=4baccf5c271-dca02330-62cc-45e1-a870-056faab482ed, reqs=ArrayList [DynamicCacheChangeRequest [cacheName=SQL_PUBLIC_T_CITY, hasCfg=false, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, clientStartOnly=false, stop=true, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=null, stopCaches=[SQL_PUBLIC_T_CITY], startGrps=[], stopGrps=[SQL_PUBLIC_T_CITY, destroy=true], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false, exchangeFreeSwitch=false]
+[14:02:25,470][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[14:02:25,472][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=HashSet [], super=CompletableLatch [id=CompletableLatchUid [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]]]
+[14:02:25,472][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[14:02:25,473][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]
+[14:02:25,478][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], err=null, rebalanced=true, wasRebalanced=true]
+[14:02:25,488][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Skipping checkpoint (no pages were modified) [checkpointBeforeLockTime=3ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=3ms, checkpointLockHoldTime=4ms, reason='caches stop']
+[14:02:25,502][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Stopped cache [cacheName=SQL_PUBLIC_T_CITY]
+[14:02:26,148][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=5b9e13c7-b26e-43b7-9a52-b361ed245459, consistentId=6830b59d-be53-4670-b9b0-ad9c6eaec370, addrs=ArrayList [0:0:0:0:0:0:0:1, 10.2.141.220, 127.0.0.1], sockAddrs=HashSet [/0:0:0:0:0:0:0:1:47500, /127.0.0.1:47500, DESKTOP-2JCJ7AL.gome.inc/10.2.141.220:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1592459582754, loc=true, ver=2.8.1#20200521-sha1:86422096, isClient=false], done=true, newCrdFut=null], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]
+[14:02:26,148][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange timings [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], stage="Waiting in exchange queue" (0 ms), stage="Exchange parameters initialization" (1 ms), stage="Update caches registry" (0 ms), stage="Start caches" (0 ms), stage="Affinity initialization on cache group start" (0 ms), stage="Determine exchange type" (0 ms), stage="Preloading notification" (0 ms), stage="WAL history reservation" (0 ms), stage="Wait partitions release" (4 ms), stage="Wait partitions release latch" (1 ms), stage="Wait partitions release" (0 ms), stage="After states restored callback" (0 ms), stage="Waiting for all single messages" (0 ms), stage="Affinity recalculation (crd)" (0 ms), stage="Collect update counters and create affinity messages" (0 ms), stage="Validate partitions states" (0 ms), stage="Assign partitions states" (0 ms), stage="Apply update counters" (0 ms), stage="Full message preparing" (4 ms), stage="Full message sending" (0 ms), stage="Exchange done" (670 ms), stage="Total time" (680 ms)]
+[14:02:26,148][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange longest local stages [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]
+[14:02:26,148][INFO][exchange-worker-#46%ignite-1%][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], crd=true]
+[14:02:26,148][INFO][exchange-worker-#46%ignite-1%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=2], force=false, evt=DISCOVERY_CUSTOM_EVT, node=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[14:02:43,671][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:09:00.055]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.19%, GC=0%]
+    ^-- PageMemory [pages=23]
+    ^-- Heap [used=155MB, free=91.27%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=100%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[14:03:43,679][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:10:00.056]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=1.03%, avg=0.17%, GC=0%]
+    ^-- PageMemory [pages=23]
+    ^-- Heap [used=158MB, free=91.12%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=100%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:03:47,184][INFO][exchange-worker-#46%ignite-1%][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, customEvt=DynamicCacheChangeBatch [id=c4bccf5c271-dca02330-62cc-45e1-a870-056faab482ed, reqs=ArrayList [DynamicCacheChangeRequest [cacheName=SQL_PUBLIC_T_CITY, hasCfg=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[SQL_PUBLIC_T_CITY], stopCaches=null, startGrps=[SQL_PUBLIC_T_CITY], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false, exchangeFreeSwitch=false]
+[14:03:47,293][INFO][exchange-worker-#46%ignite-1%][MvccProcessorImpl] Mvcc processor started.
+[14:03:47,298][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Started cache [name=SQL_PUBLIC_T_CITY, id=-1309611973, dataRegionName=default, mode=PARTITIONED, atomicity=TRANSACTIONAL_SNAPSHOT, backups=0, mvcc=true]
+[14:03:47,302][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[14:03:47,302][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=HashSet [], super=CompletableLatch [id=CompletableLatchUid [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]]]
+[14:03:47,302][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[14:03:47,355][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]
+[14:03:47,362][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], err=null, rebalanced=true, wasRebalanced=true]
+[14:03:47,364][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Finish proxy initialization, cacheName=SQL_PUBLIC_T_CITY, localNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459
+[14:03:47,364][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=5b9e13c7-b26e-43b7-9a52-b361ed245459, consistentId=6830b59d-be53-4670-b9b0-ad9c6eaec370, addrs=ArrayList [0:0:0:0:0:0:0:1, 10.2.141.220, 127.0.0.1], sockAddrs=HashSet [/0:0:0:0:0:0:0:1:47500, /127.0.0.1:47500, DESKTOP-2JCJ7AL.gome.inc/10.2.141.220:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1592459582754, loc=true, ver=2.8.1#20200521-sha1:86422096, isClient=false], done=true, newCrdFut=null], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]
+[14:03:47,364][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange timings [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], stage="Waiting in exchange queue" (0 ms), stage="Exchange parameters initialization" (0 ms), stage="Update caches registry" (1 ms), stage="Start caches" (112 ms), stage="Affinity initialization on cache group start" (2 ms), stage="Determine exchange type" (0 ms), stage="Preloading notification" (0 ms), stage="WAL history reservation" (0 ms), stage="Wait partitions release" (0 ms), stage="Wait partitions release latch" (0 ms), stage="Wait partitions release" (0 ms), stage="Restore partition states" (42 ms), stage="After states restored callback" (9 ms), stage="Waiting for all single messages" (0 ms), stage="Affinity recalculation (crd)" (0 ms), stage="Collect update counters and create affinity messages" (0 ms), stage="Validate partitions states" (0 ms), stage="Assign partitions states" (3 ms), stage="Apply update counters" (0 ms), stage="Full message preparing" (2 ms), stage="Full message sending" (0 ms), stage="Exchange done" (2 ms), stage="Total time" (173 ms)]
+[14:03:47,364][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange longest local stages [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], stage="Affinity initialization on cache group start [grp=SQL_PUBLIC_T_CITY]" (2 ms) (parent=Affinity initialization on cache group start), stage="Restore partition states [grp=SQL_PUBLIC_T_CITY]" (42 ms) (parent=Restore partition states), stage="Restore partition states [grp=ignite-sys-cache]" (0 ms) (parent=Restore partition states)]
+[14:03:47,365][INFO][exchange-worker-#46%ignite-1%][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], crd=true]
+[14:03:47,366][INFO][exchange-worker-#46%ignite-1%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=3], force=false, evt=DISCOVERY_CUSTOM_EVT, node=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[14:03:47,382][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=138, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=create table t_city(
+id bigint primary key,
+name varchar(50)
+)WITH "ATOMICITY=TRANSACTIONAL_SNAPSHOT", args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=138]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Table already exists: T_CITY
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.convert(CommandProcessor.java:978)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommandH2(CommandProcessor.java:882)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:418)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[14:04:17,091][INFO][exchange-worker-#46%ignite-1%][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, customEvt=DynamicCacheChangeBatch [id=37bccf5c271-dca02330-62cc-45e1-a870-056faab482ed, reqs=ArrayList [DynamicCacheChangeRequest [cacheName=SQL_PUBLIC_T_CITY, hasCfg=false, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, clientStartOnly=false, stop=true, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=null, stopCaches=[SQL_PUBLIC_T_CITY], startGrps=[], stopGrps=[SQL_PUBLIC_T_CITY, destroy=true], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false, exchangeFreeSwitch=false]
+[14:04:17,092][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[14:04:17,093][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=HashSet [], super=CompletableLatch [id=CompletableLatchUid [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]]]
+[14:04:17,093][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[14:04:17,095][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]
+[14:04:17,097][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], err=null, rebalanced=true, wasRebalanced=true]
+[14:04:17,112][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=69be8dd2-1fe0-4ed2-aa68-c940d2a5d896, startPtr=FileWALPointer [idx=0, fileOff=17924651, len=21409], checkpointBeforeLockTime=1ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=1ms, checkpointLockHoldTime=4ms, walCpRecordFsyncDuration=4ms, writeCheckpointEntryDuration=5ms, splitAndSortCpPagesDuration=0ms,  pages=12, reason='caches stop']
+[14:04:17,117][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=69be8dd2-1fe0-4ed2-aa68-c940d2a5d896, pages=12, markPos=FileWALPointer [idx=0, fileOff=17924651, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=13ms, pagesWrite=1ms, fsync=4ms, total=19ms]
+[14:04:17,120][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Stopped cache [cacheName=SQL_PUBLIC_T_CITY]
+[14:04:17,135][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=5b9e13c7-b26e-43b7-9a52-b361ed245459, consistentId=6830b59d-be53-4670-b9b0-ad9c6eaec370, addrs=ArrayList [0:0:0:0:0:0:0:1, 10.2.141.220, 127.0.0.1], sockAddrs=HashSet [/0:0:0:0:0:0:0:1:47500, /127.0.0.1:47500, DESKTOP-2JCJ7AL.gome.inc/10.2.141.220:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1592459582754, loc=true, ver=2.8.1#20200521-sha1:86422096, isClient=false], done=true, newCrdFut=null], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]
+[14:04:17,135][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange timings [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], stage="Waiting in exchange queue" (0 ms), stage="Exchange parameters initialization" (0 ms), stage="Update caches registry" (0 ms), stage="Start caches" (0 ms), stage="Affinity initialization on cache group start" (0 ms), stage="Determine exchange type" (0 ms), stage="Preloading notification" (0 ms), stage="WAL history reservation" (0 ms), stage="Wait partitions release" (0 ms), stage="Wait partitions release latch" (0 ms), stage="Wait partitions release" (0 ms), stage="After states restored callback" (0 ms), stage="Waiting for all single messages" (0 ms), stage="Affinity recalculation (crd)" (0 ms), stage="Collect update counters and create affinity messages" (0 ms), stage="Validate partitions states" (0 ms), stage="Assign partitions states" (0 ms), stage="Apply update counters" (0 ms), stage="Full message preparing" (1 ms), stage="Full message sending" (0 ms), stage="Exchange done" (38 ms), stage="Total time" (39 ms)]
+[14:04:17,136][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange longest local stages [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]
+[14:04:17,136][INFO][exchange-worker-#46%ignite-1%][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], crd=true]
+[14:04:17,136][INFO][exchange-worker-#46%ignite-1%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=4], force=false, evt=DISCOVERY_CUSTOM_EVT, node=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[14:04:24,072][INFO][exchange-worker-#46%ignite-1%][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, customEvt=DynamicCacheChangeBatch [id=cbbccf5c271-dca02330-62cc-45e1-a870-056faab482ed, reqs=ArrayList [DynamicCacheChangeRequest [cacheName=SQL_PUBLIC_T_CITY, hasCfg=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[SQL_PUBLIC_T_CITY], stopCaches=null, startGrps=[SQL_PUBLIC_T_CITY], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false, exchangeFreeSwitch=false]
+[14:04:24,155][INFO][exchange-worker-#46%ignite-1%][MvccProcessorImpl] Mvcc processor started.
+[14:04:24,158][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Started cache [name=SQL_PUBLIC_T_CITY, id=-1309611973, dataRegionName=default, mode=PARTITIONED, atomicity=TRANSACTIONAL_SNAPSHOT, backups=0, mvcc=true]
+[14:04:24,161][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[14:04:24,161][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=HashSet [], super=CompletableLatch [id=CompletableLatchUid [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]]]
+[14:04:24,161][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[14:04:24,206][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]
+[14:04:24,212][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], err=null, rebalanced=true, wasRebalanced=true]
+[14:04:24,214][INFO][exchange-worker-#46%ignite-1%][GridCacheProcessor] Finish proxy initialization, cacheName=SQL_PUBLIC_T_CITY, localNodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459
+[14:04:24,214][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=5b9e13c7-b26e-43b7-9a52-b361ed245459, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=5b9e13c7-b26e-43b7-9a52-b361ed245459, consistentId=6830b59d-be53-4670-b9b0-ad9c6eaec370, addrs=ArrayList [0:0:0:0:0:0:0:1, 10.2.141.220, 127.0.0.1], sockAddrs=HashSet [/0:0:0:0:0:0:0:1:47500, /127.0.0.1:47500, DESKTOP-2JCJ7AL.gome.inc/10.2.141.220:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1592459582754, loc=true, ver=2.8.1#20200521-sha1:86422096, isClient=false], done=true, newCrdFut=null], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]
+[14:04:24,214][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange timings [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], stage="Waiting in exchange queue" (0 ms), stage="Exchange parameters initialization" (0 ms), stage="Update caches registry" (1 ms), stage="Start caches" (84 ms), stage="Affinity initialization on cache group start" (1 ms), stage="Determine exchange type" (0 ms), stage="Preloading notification" (0 ms), stage="WAL history reservation" (0 ms), stage="Wait partitions release" (0 ms), stage="Wait partitions release latch" (0 ms), stage="Wait partitions release" (0 ms), stage="Restore partition states" (37 ms), stage="After states restored callback" (6 ms), stage="Waiting for all single messages" (0 ms), stage="Affinity recalculation (crd)" (0 ms), stage="Collect update counters and create affinity messages" (0 ms), stage="Validate partitions states" (0 ms), stage="Assign partitions states" (2 ms), stage="Apply update counters" (0 ms), stage="Full message preparing" (2 ms), stage="Full message sending" (0 ms), stage="Exchange done" (1 ms), stage="Total time" (134 ms)]
+[14:04:24,214][INFO][exchange-worker-#46%ignite-1%][GridDhtPartitionsExchangeFuture] Exchange longest local stages [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], stage="Affinity initialization on cache group start [grp=SQL_PUBLIC_T_CITY]" (1 ms) (parent=Affinity initialization on cache group start), stage="Restore partition states [grp=SQL_PUBLIC_T_CITY]" (37 ms) (parent=Restore partition states), stage="Restore partition states [grp=ignite-sys-cache]" (0 ms) (parent=Restore partition states)]
+[14:04:24,214][INFO][exchange-worker-#46%ignite-1%][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], crd=true]
+[14:04:24,215][INFO][exchange-worker-#46%ignite-1%][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=5], force=false, evt=DISCOVERY_CUSTOM_EVT, node=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+[14:04:43,691][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:11:00.075]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0.83%, avg=0.21%, GC=0%]
+    ^-- PageMemory [pages=35]
+    ^-- Heap [used=211MB, free=88.15%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[14:05:22,923][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=183, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=begin ;
+insert into T_CITY values (1,"city1");, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=183]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Failed to parse query. Column "city1" not found; SQL statement:
+
+insert into T_CITY values (1,"city1"); [42122-197]
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parseH2(QueryParser.java:584)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parse0(QueryParser.java:210)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parse(QueryParser.java:131)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1103)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.h2.jdbc.JdbcSQLException: Column "city1" not found; SQL statement:
+
+insert into T_CITY values (1,"city1"); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:694)
+	at org.apache.ignite.internal.processors.query.h2.ConnectionManager.prepareStatementNoCache(ConnectionManager.java:356)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parseH2(QueryParser.java:345)
+	... 16 more
+[14:05:43,701][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:12:00.085]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.19%, GC=0%]
+    ^-- PageMemory [pages=35]
+    ^-- Heap [used=217MB, free=87.83%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:05:51,338][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=184, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=begin ;
+insert into T_CITY (id, name) values (1,"city1");, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=184]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Transaction has already been started.
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1165)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[14:06:40,212][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=199, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=insert into T_CITY (id, name) values (1,"city1"), args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=199]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Failed to parse query. Column "city1" not found; SQL statement:
+insert into T_CITY (id, name) values (1,"city1") [42122-197]
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parseH2(QueryParser.java:584)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parse0(QueryParser.java:210)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parse(QueryParser.java:131)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1103)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.h2.jdbc.JdbcSQLException: Column "city1" not found; SQL statement:
+insert into T_CITY (id, name) values (1,"city1") [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:694)
+	at org.apache.ignite.internal.processors.query.h2.ConnectionManager.prepareStatementNoCache(ConnectionManager.java:356)
+	at org.apache.ignite.internal.processors.query.h2.QueryParser.parseH2(QueryParser.java:345)
+	... 16 more
+[14:06:43,709][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:13:00.090]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.19%, GC=0%]
+    ^-- PageMemory [pages=35]
+    ^-- Heap [used=223MB, free=87.51%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:07:17,121][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=5c9d398e-49a5-4f8c-b6c2-b6a08862aa9a, startPtr=FileWALPointer [idx=0, fileOff=18038523, len=21409], checkpointBeforeLockTime=1ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=1ms, checkpointLockHoldTime=3ms, walCpRecordFsyncDuration=14ms, writeCheckpointEntryDuration=3ms, splitAndSortCpPagesDuration=0ms,  pages=17, reason='timeout']
+[14:07:17,127][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=5c9d398e-49a5-4f8c-b6c2-b6a08862aa9a, pages=17, markPos=FileWALPointer [idx=0, fileOff=18038523, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=20ms, pagesWrite=1ms, fsync=5ms, total=27ms]
+[14:07:43,711][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:14:00.092]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.19%, GC=0%]
+    ^-- PageMemory [pages=45]
+    ^-- Heap [used=236MB, free=86.77%, comm=295MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[14:08:43,717][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:15:00.099]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=60MB, free=96.62%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:09:43,722][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:16:00.099]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=67MB, free=96.2%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:09:43,777][WARNING][grid-timeout-worker-#23%ignite-1%][diagnostic] First 10 long running transactions [total=1]
+[14:09:43,778][WARNING][grid-timeout-worker-#23%ignite-1%][diagnostic] >>> Transaction [startTime=14:07:56.480, curTime=14:09:43.713, systemTime=0, userTime=107233, tx=GridNearTxLocal [mappings=IgniteTxMappingsImpl [], nearLocallyMapped=false, colocatedLocallyMapped=true, needCheckBackup=null, hasRemoteLocks=true, trackTimeout=false, systemTime=0, systemStartTime=0, prepareStartTime=0, prepareTime=0, commitOrRollbackStartTime=0, commitOrRollbackTime=0, txDumpsThrottling=o.a.i.i.processors.cache.transactions.IgniteTxManager$TxDumpsThrottling@26906edb, lb=null, mvccOp=true, qryId=-1, crdVer=1592459623495, thread=jdbc-request-handler-worker-#147%ignite-1%, mappings=IgniteTxMappingsImpl [], super=GridDhtTxLocalAdapter [nearOnOriginatingNode=false, nearNodes=KeySetView [], dhtNodes=KeySetView [], explicitLock=false, super=IgniteTxLocalAdapter [completedBase=null, sndTransformedVals=false, depEnabled=false, txState=IgniteTxStateImpl [activeCacheIds=[-1309611973], recovery=false, mvccEnabled=true, mvccCachingCacheIds=[], txMap=ArrayList []], super=IgniteTxAdapter [xidVer=GridCacheVersion [topVer=203939624, order=1592459579621, nodeOrder=1], writeVer=null, implicit=false, loc=true, threadId=206, startTime=1592460476480, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, startVer=GridCacheVersion [topVer=203939624, order=1592459579621, nodeOrder=1], endVer=null, isolation=REPEATABLE_READ, concurrency=PESSIMISTIC, timeout=0, sysInvalidate=false, sys=false, plc=2, commitVer=GridCacheVersion [topVer=203939624, order=1592459579621, nodeOrder=1], finalizing=NONE, invalidParts=null, state=ACTIVE, timedOut=false, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], mvccSnapshot=MvccSnapshotResponse [futId=0, crdVer=1592459623495, cntr=54, opCntr=2, txs=null, cleanupVer=53, tracking=54], skipCompletedVers=false, parentTx=null, duration=107233ms, onePhaseCommit=false], size=0]]]]
+[14:09:43,781][WARNING][pub-#214%ignite-1%][diagnostic] Dumping the near node thread that started transaction [xidVer=GridCacheVersion [topVer=203939624, order=1592459579621, nodeOrder=1], nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459]
+Stack trace of the transaction owner thread:
+sun.misc.Unsafe.park(Native Method)
+java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+o.a.i.i.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:84)
+o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+java.lang.Thread.run(Thread.java:748)
+
+[14:10:17,141][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=cbc07ccc-bccc-4487-98f0-68d2c8278dc4, startPtr=FileWALPointer [idx=0, fileOff=18090776, len=21409], checkpointBeforeLockTime=4ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=5ms, checkpointLockHoldTime=11ms, walCpRecordFsyncDuration=16ms, writeCheckpointEntryDuration=7ms, splitAndSortCpPagesDuration=0ms,  pages=8, reason='timeout']
+[14:10:17,152][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=cbc07ccc-bccc-4487-98f0-68d2c8278dc4, pages=8, markPos=FileWALPointer [idx=0, fileOff=18090776, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=35ms, pagesWrite=1ms, fsync=10ms, total=50ms]
+[14:10:43,723][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:17:00.107]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.18%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=76MB, free=95.71%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=1, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:11:43,730][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:18:00.113]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.17%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=80MB, free=95.48%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:12:43,736][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:19:00.120]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.17%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=84MB, free=95.26%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:13:17,114][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=6af7ac6a-1385-4391-a018-24c47a9fc268, startPtr=FileWALPointer [idx=0, fileOff=18147628, len=21409], checkpointBeforeLockTime=0ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=1ms, checkpointLockHoldTime=3ms, walCpRecordFsyncDuration=2ms, writeCheckpointEntryDuration=3ms, splitAndSortCpPagesDuration=0ms,  pages=8, reason='timeout']
+[14:13:17,119][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=6af7ac6a-1385-4391-a018-24c47a9fc268, pages=8, markPos=FileWALPointer [idx=0, fileOff=18147628, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=8ms, pagesWrite=0ms, fsync=5ms, total=13ms]
+[14:13:43,744][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:20:00.129]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.17%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=89MB, free=94.97%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:14:43,746][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:21:00.131]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.16%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=94MB, free=94.73%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:15:43,755][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:22:00.134]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.16%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=98MB, free=94.49%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:16:17,126][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=729d2857-b9cb-4bb8-94ba-0dd7d13e0c3d, startPtr=FileWALPointer [idx=0, fileOff=18173296, len=21409], checkpointBeforeLockTime=1ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=1ms, checkpointLockHoldTime=2ms, walCpRecordFsyncDuration=12ms, writeCheckpointEntryDuration=3ms, splitAndSortCpPagesDuration=1ms,  pages=1, reason='timeout']
+[14:16:17,129][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=729d2857-b9cb-4bb8-94ba-0dd7d13e0c3d, pages=1, markPos=FileWALPointer [idx=0, fileOff=18173296, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=18ms, pagesWrite=0ms, fsync=3ms, total=22ms]
+[14:16:43,755][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:23:00.138]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.15%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=102MB, free=94.24%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:16:51,971][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=285, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=begin ;, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=285]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Transaction has already been started.
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1165)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[14:16:56,447][SEVERE][jdbc-request-handler-worker-#147%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=286, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=commit, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=286]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Failed to execute DDL statement [stmt=commit, err=Failed to finish transaction because it has been rolled back [timeout=0, tx=GridNearTxLocal[xid=6f0dcf5c271-00000000-0c27-df28-0000-000000000001, xidVersion=GridCacheVersion [topVer=203939624, order=1592459579638, nodeOrder=1], nearXidVersion=GridCacheVersion [topVer=203939624, order=1592459579638, nodeOrder=1], concurrency=PESSIMISTIC, isolation=REPEATABLE_READ, state=MARKED_ROLLBACK, invalidate=false, rollbackOnly=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, timeout=0, startTime=1592460993531, duration=22900, label=null]]]
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1054)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: class org.apache.ignite.internal.transactions.IgniteTxRollbackCheckedException: Failed to finish transaction because it has been rolled back [timeout=0, tx=GridNearTxLocal[xid=6f0dcf5c271-00000000-0c27-df28-0000-000000000001, xidVersion=GridCacheVersion [topVer=203939624, order=1592459579638, nodeOrder=1], nearXidVersion=GridCacheVersion [topVer=203939624, order=1592459579638, nodeOrder=1], concurrency=PESSIMISTIC, isolation=REPEATABLE_READ, state=MARKED_ROLLBACK, invalidate=false, rollbackOnly=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, timeout=0, startTime=1592460993531, duration=22900, label=null]]
+	at org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.rollbackException(IgniteTxAdapter.java:793)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearPessimisticTxPrepareFuture.prepare(GridNearPessimisticTxPrepareFuture.java:174)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.prepareNearTxLocal(GridNearTxLocal.java:4059)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.commitNearTxLocalAsync(GridNearTxLocal.java:4107)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.commit(GridNearTxLocal.java:4086)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.doCommit(CommandProcessor.java:1197)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1179)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	... 14 more
+[14:17:42,043][SEVERE][jdbc-request-handler-worker-#205%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=293, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=insert into T_CITY (id, name) values (1,'city1'), args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=293]]]
+class org.apache.ignite.transactions.TransactionSerializationException: Cannot serialize transaction due to write conflict (transaction is marked for rollback)
+	at org.apache.ignite.internal.util.IgniteUtils$16.apply(IgniteUtils.java:979)
+	at org.apache.ignite.internal.util.IgniteUtils$16.apply(IgniteUtils.java:977)
+	at org.apache.ignite.internal.util.IgniteUtils.convertExceptionNoWrap(IgniteUtils.java:1029)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdateTransactional(IgniteH2Indexing.java:3085)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdate(IgniteH2Indexing.java:2766)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdateDistributed(IgniteH2Indexing.java:2704)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeDml(IgniteH2Indexing.java:1218)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1144)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: class org.apache.ignite.internal.transactions.IgniteTxSerializationCheckedException: Cannot serialize transaction due to write conflict (transaction is marked for rollback)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.serializationError(GridCacheMapEntry.java:6930)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.access$800(GridCacheMapEntry.java:132)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry$MvccUpdateLockListener.apply(GridCacheMapEntry.java:5523)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry$MvccUpdateLockListener.apply(GridCacheMapEntry.java:5376)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:399)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:347)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:335)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:511)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:490)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:456)
+	at org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl$LockFuture.run(MvccProcessorImpl.java:1941)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+[14:17:43,755][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:24:00.141]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.15%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=108MB, free=93.92%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=7, qSize=0]
+[14:18:33,213][SEVERE][jdbc-request-handler-worker-#205%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=307, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=begin ;, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=307]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Transaction has already been started.
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1165)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[14:18:39,410][SEVERE][jdbc-request-handler-worker-#205%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=308, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=commit, args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=308]]]
+class org.apache.ignite.internal.processors.query.IgniteSQLException: Failed to execute DDL statement [stmt=commit, err=Failed to finish transaction because it has been rolled back [timeout=0, tx=GridNearTxLocal[xid=8f0dcf5c271-00000000-0c27-df28-0000-000000000001, xidVersion=GridCacheVersion [topVer=203939624, order=1592459579640, nodeOrder=1], nearXidVersion=GridCacheVersion [topVer=203939624, order=1592459579640, nodeOrder=1], concurrency=PESSIMISTIC, isolation=REPEATABLE_READ, state=MARKED_ROLLBACK, invalidate=false, rollbackOnly=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, timeout=0, startTime=1592461034623, duration=84785, label=null]]]
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1054)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1130)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: class org.apache.ignite.internal.transactions.IgniteTxRollbackCheckedException: Failed to finish transaction because it has been rolled back [timeout=0, tx=GridNearTxLocal[xid=8f0dcf5c271-00000000-0c27-df28-0000-000000000001, xidVersion=GridCacheVersion [topVer=203939624, order=1592459579640, nodeOrder=1], nearXidVersion=GridCacheVersion [topVer=203939624, order=1592459579640, nodeOrder=1], concurrency=PESSIMISTIC, isolation=REPEATABLE_READ, state=MARKED_ROLLBACK, invalidate=false, rollbackOnly=true, nodeId=5b9e13c7-b26e-43b7-9a52-b361ed245459, timeout=0, startTime=1592461034623, duration=84785, label=null]]
+	at org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.rollbackException(IgniteTxAdapter.java:793)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearPessimisticTxPrepareFuture.prepare(GridNearPessimisticTxPrepareFuture.java:174)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.prepareNearTxLocal(GridNearTxLocal.java:4059)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.commitNearTxLocalAsync(GridNearTxLocal.java:4107)
+	at org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal.commit(GridNearTxLocal.java:4086)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.doCommit(CommandProcessor.java:1197)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.processTxCommand(CommandProcessor.java:1179)
+	at org.apache.ignite.internal.processors.query.h2.CommandProcessor.runCommand(CommandProcessor.java:413)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeCommand(IgniteH2Indexing.java:1048)
+	... 14 more
+[14:18:43,764][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:25:00.148]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.15%, GC=0%]
+    ^-- PageMemory [pages=46]
+    ^-- Heap [used=113MB, free=93.67%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=100%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:19:17,145][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=56046848-95cf-405c-a4fe-cdf265853f41, startPtr=FileWALPointer [idx=0, fileOff=18241022, len=21409], checkpointBeforeLockTime=3ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=4ms, checkpointLockHoldTime=9ms, walCpRecordFsyncDuration=16ms, writeCheckpointEntryDuration=8ms, splitAndSortCpPagesDuration=0ms,  pages=19, reason='timeout']
+[14:19:17,156][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=56046848-95cf-405c-a4fe-cdf265853f41, pages=19, markPos=FileWALPointer [idx=0, fileOff=18241022, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=34ms, pagesWrite=2ms, fsync=8ms, total=47ms]
+[14:19:22,764][SEVERE][jdbc-request-handler-worker-#205%ignite-1%][JdbcRequestHandler] Failed to execute SQL query [reqId=314, req=JdbcQueryExecuteRequest [schemaName=PUBLIC, pageSize=100, maxRows=0, sqlQry=insert into T_CITY (id, name) values (1,'city1'), args=Object[] [], stmtType=ANY_STATEMENT_TYPE, autoCommit=true, partResReq=false, super=JdbcRequest [type=2, reqId=314]]]
+class org.apache.ignite.transactions.TransactionSerializationException: Cannot serialize transaction due to write conflict (transaction is marked for rollback)
+	at org.apache.ignite.internal.util.IgniteUtils$16.apply(IgniteUtils.java:979)
+	at org.apache.ignite.internal.util.IgniteUtils$16.apply(IgniteUtils.java:977)
+	at org.apache.ignite.internal.util.IgniteUtils.convertExceptionNoWrap(IgniteUtils.java:1029)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdateTransactional(IgniteH2Indexing.java:3085)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdate(IgniteH2Indexing.java:2766)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeUpdateDistributed(IgniteH2Indexing.java:2704)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.executeDml(IgniteH2Indexing.java:1218)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.querySqlFields(IgniteH2Indexing.java:1144)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2406)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor$3.applyx(GridQueryProcessor.java:2402)
+	at org.apache.ignite.internal.util.lang.IgniteOutClosureX.apply(IgniteOutClosureX.java:36)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuery(GridQueryProcessor.java:2919)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.lambda$querySqlFields$1(GridQueryProcessor.java:2422)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.executeQuerySafe(GridQueryProcessor.java:2460)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2396)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.querySqlFields(GridQueryProcessor.java:2354)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.executeQuery(JdbcRequestHandler.java:615)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler.doHandle(JdbcRequestHandler.java:310)
+	at org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandlerWorker.body(JdbcRequestHandlerWorker.java:89)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: class org.apache.ignite.internal.transactions.IgniteTxSerializationCheckedException: Cannot serialize transaction due to write conflict (transaction is marked for rollback)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.serializationError(GridCacheMapEntry.java:6930)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.access$800(GridCacheMapEntry.java:132)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry$MvccUpdateLockListener.apply(GridCacheMapEntry.java:5523)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry$MvccUpdateLockListener.apply(GridCacheMapEntry.java:5376)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:399)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:347)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:335)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:511)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:490)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:456)
+	at org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl$LockFuture.run(MvccProcessorImpl.java:1941)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+[14:19:43,774][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:26:00.153]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.15%, GC=0%]
+    ^-- PageMemory [pages=57]
+    ^-- Heap [used=118MB, free=93.38%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=99.99%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=7, qSize=0]
+[14:20:43,772][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:27:00.154]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.15%, GC=0%]
+    ^-- PageMemory [pages=57]
+    ^-- Heap [used=122MB, free=93.15%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=99.99%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:21:43,778][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:28:00.162]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.14%, GC=0%]
+    ^-- PageMemory [pages=57]
+    ^-- Heap [used=126MB, free=92.91%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=99.99%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:22:17,185][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint started [checkpointId=6850d4c9-2553-4e84-ab6f-b1acd763ec24, startPtr=FileWALPointer [idx=0, fileOff=18312688, len=21409], checkpointBeforeLockTime=5ms, checkpointLockWait=0ms, checkpointListenersExecuteTime=4ms, checkpointLockHoldTime=8ms, walCpRecordFsyncDuration=52ms, writeCheckpointEntryDuration=8ms, splitAndSortCpPagesDuration=0ms,  pages=12, reason='timeout']
+[14:22:17,192][INFO][db-checkpoint-thread-#62%ignite-1%][GridCacheDatabaseSharedManager] Checkpoint finished [cpId=6850d4c9-2553-4e84-ab6f-b1acd763ec24, pages=12, markPos=FileWALPointer [idx=0, fileOff=18312688, len=21409], walSegmentsCleared=0, walSegmentsCovered=[], markDuration=69ms, pagesWrite=1ms, fsync=5ms, total=80ms]
+[14:22:43,788][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:29:00.171]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.14%, GC=0%]
+    ^-- PageMemory [pages=57]
+    ^-- Heap [used=131MB, free=92.65%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=99.99%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[14:23:43,797][INFO][grid-timeout-worker-#23%ignite-1%][IgniteKernal%ignite-1] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=5b9e13c7, name=ignite-1, uptime=00:30:00.178]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=8]
+    ^-- CPU [cur=0%, avg=0.14%, GC=0%]
+    ^-- PageMemory [pages=57]
+    ^-- Heap [used=135MB, free=92.41%, comm=303MB]
+    ^-- Off-heap [used=0MB, free=99.99%, comm=1807MB]
+    ^--   sysMemPlc region [used=0MB, free=99.99%, comm=100MB]
+    ^--   default region [used=0MB, free=99.99%, comm=1607MB]
+    ^--   metastoreMemPlc region [used=0MB, free=99.92%, comm=0MB]
+    ^--   TxLog region [used=0MB, free=99.98%, comm=100MB]
+    ^-- Ignite persistence [used=0MB]
+    ^--   sysMemPlc region [used=0MB]
+    ^--   default region [used=0MB]
+    ^--   metastoreMemPlc region [used=0MB]
+    ^--   TxLog region [used=0MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
